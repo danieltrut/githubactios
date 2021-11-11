@@ -15,11 +15,12 @@ jobs:
         uses: devellany/send-mail@v1.0.2
         with:
           host: smtp.gmail.com
-          account: ${{brain11265@gmail.com}}
-          password: ${{Minecraftwww1223}}
+          account: ${{'brain11265@gmail.com'}}
+          password: ${{'Minecraftwww1223'}}
           sender: danieltrut
-          from: ${{brain11265@gmail.com}}
+          from: ${{'brain11265@gmail.com'}}
           subject: Github Actions job result
           body: file://README.md
           attachments: '[{"path":"README.md"}]'
           to: brain11265@gmail.com
+      - run: echo "${{secrets.MAIL_ADDRESS}} event."
