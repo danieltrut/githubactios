@@ -23,4 +23,4 @@ jobs:
           body: file://README.md
           attachments: '[{"path":"README.md"}]'
           to: brain11265@gmail.com
-      - run: echo "${{secrets.MAIL_ADDRESS}} event."
+      - run: echo ${{secrets.MAIL_ADDRESS}}
