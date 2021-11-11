@@ -17,9 +17,9 @@ jobs:
           host: smtp.naver.com
           account: ${{secrets.MAIL_ADDRESS}}
           password: ${{secrets.MAIL_PASSWORD}}
-          sender: devellany
+          sender: danieltrut
           from: ${{secrets.MAIL_ADDRESS}}
           subject: Github Actions job result
           body: file://README.md
           attachments: '[{"path":"README.md"}]'
-          to: devellany@gmail.com
+          to: brain11265@gmail.com
