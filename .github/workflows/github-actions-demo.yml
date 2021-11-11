@@ -6,17 +6,20 @@ jobs:
   notif:
     runs-on: ubuntu-latest
     steps:
-      - uses: danthe1st/email-filechange-notif-action@v1
+      - name: Send email
+        uses: devellany/send-mailer@v1.0.2
         with:
-          # Address to send E-Mails from
-          senderEmail: ${{ secrets.MAIL_USERNAME }}
-          # optional, The subject of the E-Mails to send
-
-          # The SMTP server used to send E-Mails
-          smtpServer: ${{ secrets.SMTP_SERVER }}
-          # optional, The SMTP port used to send E-Mails
-          smtpPort: 587
-          # The SMTP user name used to send E-Mails
-          smtpUsername: ${{ secrets.SMTP_USER }}
-          # The SMTP password used to send E-Mails
-          smtpPassword: ${{ secrets.SMTP_PASSWORD }}
+          host: smtp.google.com
+            # Optional port (defaults to 465)
+            port: 465
+            account: ${{secrets.ACCOUNT}}
+            password: ${{secrets.MAIL_PASSWORD}}
+            sender: devellany
+            from: ${{secrets.MAIL_ADDRESS}}
+            to: devellay@dico.me
+            subject: mail title.
+            body: your messages.
+            # Optional content type (defaults to text/plain)
+            contentType: text/plain
+            # Optional attachment files (JSON type. require property 'path')
+            attachments: '[{"path":"README.md"}]'
