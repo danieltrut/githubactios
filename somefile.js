@@ -1,7 +1,7 @@
 document.getElementById("demo").addEventListener("click", myFunction);
 
 function myFunction() {
-    documentxc.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+    documentxcs.getElementById("demo").innerHTML = "YOU CLICKED ME!";
 }document.getElementById("demo").addEventListener("click", myFunction);
 
 function myFunction() {
