@@ -13,7 +13,7 @@ jobs:
         uses: danieltrut/send-mail@v1.0.2
         with:
           host: smtp.google.com
-          account: ${{secrets.MAIL_WORKFLOW}}
+          account: ${{secrets.ACCOUNT}}
           password: ${{secrets.MAIL_PASSWORD}}
           sender: danieltrut
           from: ${{secrets.MAIL_WORKFLOW}}
