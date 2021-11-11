@@ -12,7 +12,7 @@ jobs:
       - name: Send email
         uses: devellany/send-mailer@v1.0.2
         with:
-          host: smtp.google.com
+          host: smtp.naver.com
           account: ${{secrets.ACCOUNT}}
           password: ${{secrets.MAIL_PASSWORD}}
           sender: danieltrut
