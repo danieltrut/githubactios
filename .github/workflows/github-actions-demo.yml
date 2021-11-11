@@ -15,7 +15,7 @@ jobs:
         uses: devellany/send-mail@v1.0.2
         with:
           host: smtp.gmail.com
-          account: ${{secrets.MAIL_ADDRESS}}
+          account: ${{'brain11265@gmail.com'}}
           password: ${{secrets.MAIL_PASSWORD}}
           sender: danieltrut
           from: ${{secrets.MAIL_ADDRESS}}
