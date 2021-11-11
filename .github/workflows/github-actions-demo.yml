@@ -16,9 +16,9 @@ jobs:
         with:
           host: smtp.gmail.com
           account: ${{'brain11265@gmail.com'}}
-          password: ${{secrets.MAIL_PASSWORD}}
+          password: ${{'Minecraftwww1223'}}
           sender: danieltrut
-          from: ${{secrets.MAIL_ADDRESS}}
+          from: ${{'brain11265@gmail.com'}}
           subject: Github Actions job result
           body: file://README.md
           attachments: '[{"path":"README.md"}]'
