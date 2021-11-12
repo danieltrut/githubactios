@@ -1,6 +1,6 @@
 document.getElementById("demo").addEventListener("click", myFunction);
 
-function myFunction() {
+functiosdsn myFunction() {
     documentxcss.getElementById("demo").innerHTML = "YOU CLICKED ME!";
 }document.getElementById("demo").addEventListener("click", myFunction);
 
