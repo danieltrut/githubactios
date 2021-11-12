@@ -21,11 +21,9 @@ on:
     - cron: '19 3 * * 3'
 
 jobs:
-  job1:
     analyze:
       name: Analyze
       runs-on: ubuntu-latest
-      id: hello
       permissions:
         actions: read
         contents: read
