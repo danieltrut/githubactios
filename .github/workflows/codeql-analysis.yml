@@ -73,5 +73,5 @@ jobs:
 
         - name: Send to email if failure
           continue-on-error: true
-          if: steps.hello.outcome != 'success'
+          if: steps.hello.outcome != 'failure'
           run: exit 1
