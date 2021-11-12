@@ -69,7 +69,6 @@ jobs:
         - name: Perform CodeQL Analysis
           id: hello
           uses: github/codeql-action/analyze@v1
-          continue-on-error: true
 
         - name: Send to email if failure
           if: steps.hello.outcome != 'failure'
